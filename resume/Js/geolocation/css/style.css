@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.find-location {
+  position: relative;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 400px;
+  border: 2px solid transparent;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.find-location::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(to top, green,blue);
+  animation:bgc 4s linear infinite;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.find-location::after {
+  content: "";
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  inset: 5px;
+}
+
+.find-location div,button,p,h1 {
+  z-index: 100;
+}
+
+.geoInformation {
+  color: white;
+  margin: 20px;
+}
+
+.information {
+  color: rgb(168, 168, 168);
+  margin: 10px;
+}
+
+.find-location .btn-show {
+  background: none;
+  border: none;
+}
+
+.find-location .btn-show .compass {
+  color: rgba(255, 0, 0, 0.505);
+  font-size: 5rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.find-location .btn-show .compass:hover {
+  color: rgba(255, 0, 0, 0.753);
+  font-size: 5.2rem;
+}
+
+.find-location .location {
+  color:snow;
+  text-shadow: 2px 2px 10px black;
+  margin: 20px;
+}
+
+@keyframes bgc {
+ from {transform: rotate(0deg);}
+ to {transform: rotate(350deg);}
+}

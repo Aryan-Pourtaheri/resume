@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, antiquewhite, rgb(166, 166, 166));
+  height: 100vh; 
+}
+
+.container .instrument{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
+  color: rgb(193, 191, 191);
+  padding: 50px;
+  width: 800px;
+  margin-left: 100px;
+  border-radius: 10px;
+}
+
+.instrument .Music-notes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+}
+
+.Music-notes .music-note {
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+}
+
+/* do */
+.Music-notes .music-note.do {
+  background-color: black;
+  cursor: pointer;
+}
+
+.Music-notes .music-note.do:hover {
+  background-color: rgb(54, 54, 54);
+}
+/* re */
+.Music-notes .music-note.re {
+  background-color: rgb(34, 34, 168);
+}
+
+.Music-notes .music-note.re:hover {
+  background-color: rgb(58, 58, 176);
+}
+/* mi */
+.Music-notes .music-note.mi {
+  background-color: rgb(0, 131, 131);
+}
+
+.Music-notes .music-note.mi:hover {
+  background-color: rgb(32, 149, 149);
+}
+/* fa */
+.Music-notes .music-note.fa {
+  background-color: rgb(111, 4, 165);
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.Music-notes .music-note.fa:hover {
+  background-color: rgb(106, 19, 176);
+}
+/* so */
+.Music-notes .music-note.sol {
+  background-color: rgb(185, 39, 134);
+}
+
+.Music-notes .music-note.sol:hover {
+  background-color: rgb(207, 0, 134);
+}
+/* la */
+.Music-notes .music-note.la {
+  background-color: rgb(0, 128, 32);
+}
+
+.Music-notes .music-note.la:hover {
+  background-color: rgb(1, 140, 36);
+}
+/* si */
+.Music-notes .music-note.si {
+  background-color: rgb(130, 126, 2);
+}
+
+.Music-notes .music-note.si:hover {
+  background-color: rgb(152, 150, 0); 
+}
+/* do stratched */
+.Music-notes .music-note.do-stretched {
+  background-color: rgb(191, 105, 0);
+}
+
+.Music-notes .music-note.do-stretched:hover {
+  background-color: rgb(219, 121, 0); 
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: 150vh; 
+  }
+
+  .instrument .Music-notes {
+    flex-direction: column;
+  }
+
+  .container .instrument{
+    width: 300px;
+  }
+}

@@ -1,0 +1,45 @@
+body {
+  background: linear-gradient(0deg, #0a0a0a, #232323fe) fixed no-repeat;
+  font-family: sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, #ca5b00, #c53b00);
+  color: white;
+  text-align: center;
+  width: 300px;
+  border-radius: 10px;
+  height: 200px;
+  padding: 50px;
+  font-size: 1.4rem;
+}
+
+.container p {
+  text-shadow: 2px 2px 2px black;
+}
+
+.container .magical-hat {
+  width: 100px;
+  transition: 1s;
+}
+
+.container button {
+  color: white;
+  outline: none;
+  border: none;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: red;
+  transition: 1s;
+}
+

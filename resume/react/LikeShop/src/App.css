@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('assets/bg1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-item {
+  @apply block text-slate-400 py-2
+}
+
+.active {
+  @apply block text-white
+}
+
+.log-in {
+  @apply text-white bg-purple-600 rounded-md hover:text-gray-300 hover:bg-purple-700 py-3 px-5
+}
+
+.sign-up {
+  @apply text-white bg-slate-700 rounded-md hover:text-gray-300 hover:bg-slate-800 py-3 px-5
+}

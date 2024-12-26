@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:linear-gradient(35deg, white,antiquewhite);
+}
+
+.container {
+  width: 1200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  user-select: none;
+}
+
+.Slider {
+  position: relative;
+}
+
+.btn-move {
+  position: absolute;
+  background-color: rgba(44, 44, 44, 0.619);
+  border-radius: 50%;
+  padding: 10px;
+  color: white;
+  top: 50%;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-move:hover {
+  opacity: 0.9;
+}
+
+.btn-move:active {
+  opacity: 1;
+}
+
+#btn-prev {
+  left: 0;
+}
+
+#btn-next {
+  right: 0;
+}
+
+.container .image-slider {
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  gap: 10px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.container .image-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.container .image-slider .image-item {
+  width: 325px;
+  height: 225px;
+  object-fit: cover;
+}
+
+.slider-scroll {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.scroll-track {
+  border-radius: 50px;
+  background-color: rgba(120, 120, 120, 0.388);
+  height: 4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-thumb {
+  position: absolute;
+  border-radius: inherit;
+  background-color: black;
+  height: 2px;
+  width: 40%;
+  opacity: 0.4;
+}
+
+.scroll-track:hover .scroll-thumb {
+  padding: 2px;
+  opacity: 0.5;
+  cursor: grab;
+}
+
+.scroll-thumb:active {
+  padding: 2.2px;
+  opacity: 0.6;
+  cursor: grabbing;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 700px;
+  }  
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 500px;
+  }  
+}

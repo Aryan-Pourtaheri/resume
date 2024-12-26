@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist</title>
+  <link rel="icon" href="./icons/music-icon.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./icons/icons.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="images">
+      <img id="image" src="./images/9mm.jpeg" alt="images">
+    </div>
+
+    <div class="song-about">
+      <h1 class="song-name">9mm</h1>
+    </div>
+
+    <audio class="music-track">
+      <source src="./audios/9mm.mp3">
+    </audio>
+
+    <input type="range" id="progress">
+
+    <div class="controler">
+        <div class="prev"><i class="fa-solid fa-backward"></i></div>
+        <div class="play-pause"><i class="fa-solid fa-play"></i></div>
+        <div class="next"><i class="fa-solid fa-forward"></i></div>
+    </div>
+
+  </div>
+
+  <script src="./js/app.js" type="module"></script>
+</body>
+</html>

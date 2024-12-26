@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  border: 2px solid black;
+  padding: 80px;
+}
+
+.circle {
+  position: absolute;
+  background-color: red;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.btn {
+  margin: 10px;
+  outline: none;
+  background-color: rgb(121, 255, 106);
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

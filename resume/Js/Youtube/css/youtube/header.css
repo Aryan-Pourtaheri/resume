@@ -1,0 +1,132 @@
+body{
+    height: 1000px;
+    padding-top:70px ;
+}
+
+.head{
+    z-index: 100;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+    height: 50px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom:2px solid rgba(128, 128, 128, 0.262);
+
+}
+
+.center--flex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.search--bar{
+    flex: 1;
+    height: 34px;
+    padding-left: 12px ;
+    font-size: 1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color:gray;
+    box-shadow: inset 1px 2px 5px
+    rgb(0, 0, 0,0.15);
+    
+}
+
+.search--icon{
+    height: 2em;
+    width: 2em;
+    
+}
+
+.microphon--icon{
+    padding: 5px;
+    padding-bottom: 1px ;
+    padding-top: 1px;
+    height: 1.4rem;
+    width: 1rem;
+}
+
+.microphon--button{
+    margin-left: 10px;
+    border-style: none;
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+ }
+ 
+ .search-button{
+    height: 39px;
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.329) ;
+    cursor: pointer;
+    margin-left: -5px;
+    
+ 
+ }
+
+.search--bar::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.right--flex{
+    display: flex;
+    column-gap:20px ;
+    margin-right: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.notify--img{
+    position: relative;
+}
+
+.notify--count{
+    position: absolute;
+    height: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    font-size: 0.8rem;
+    color: white;
+    padding: 0px 3px 0px 3px;
+    border-radius: 100%;
+    text-align: center;
+    top: -5px;
+    right:-2px;
+}
+
+.user--img{
+    width: 40px;
+    height: 40px;
+    
+
+}
+
+.right--flex--firstPart{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.left--flex{
+    width: 100px;
+    display:grid;
+    grid-template-columns: 30px 100px;
+    column-gap: 40px;
+}
+
+img{
+    width: 1.2rem;
+}
+
