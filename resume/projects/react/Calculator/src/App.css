@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scrollbar-width: 0;
+  overflow: hidden;
+}
+
+.input-number {
+  position: absolute;
+  height: 70px;
+  width: 560px;
+  top: 2%;
+  left: 52.3%;
+  transform: translateX(-50%);
+}
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-x:hidden;
+  padding: 100px;
+}
+
+.btn-number {
+  background-color: rgb(100, 100, 100);
+  opacity: 0.9;
+  color: white;
+  height: 100px;
+  width: 120px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}  
+
+.btn-symbol {
+  background-color: rgb(232, 130, 83);
+  color: white;
+  opacity: 0.9;
+  height: 100px;
+  width: 120px;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.btn-symbol:hover, .btn-number:hover {
+  opacity: 1;
+}
+
+.btn-equals {
+  grid-column: 3 / span 2;
+  grid-row: 5;
+  width: 93%;
+}
+
+
+@media screen and (max-width: 1180px) {
+  .input-number {
+    width: 400px;
+  }
+
+  .btn-number,.btn-symbol {
+    width: 90px;
+    height: 90px;
+  }
+
+  .number-container{
+    grid-template-columns: repeat(3,100px);
+    gap: 10px;
+  }
+
+  .symbols-container {
+    gap: 10px;
+  }
+
+  .btn-equals {
+    grid-column: 3 / span 2;
+    grid-row: 5;
+    width: 93%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .input-number {
+    height: 50px;
+    width: 200px;
+    top: 20%;
+    left: 52.3%;
+    transform: translateX(-50%);
+  }
+
+  .btn-number , .btn-symbol {
+    width: 50px;
+    height: 50px;
+  }
+
+  .btn-equals {
+    grid-column: 3 / span 2;
+    grid-row: 5;
+    width: 93%;
+  }
+}
+
+@layer components {
+  .container {
+    @apply flex justify-center
+  }
+
+  .calculator {
+    @apply bg-black
+  }
+
+  .button-container {
+    @apply  grid grid-cols-calc
+  }
+
+  .text-input {
+    @apply w-full text-2xl border-none bg-transparent px-4 outline-none focus:outline-none text-white 
+  }
+  
+  .operation-container {
+    @apply flex justify-center max-w-full w-full h-full rounded-lg border border-black  bg-gray-700 
+  }
+
+  .input-number {
+    @apply flex h-60 w-screen items-center justify-center z-50
+  }
+}
