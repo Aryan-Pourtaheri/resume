@@ -9,7 +9,7 @@ As a frontend developer, I focus on crafting seamless user experiences with clea
 ## 🛠️ Skills & Technologies
 
 - **Languages**: JavaScript (ES6+), HTML, CSS
-- **Frameworks & Libraries**: React, Tailwind CSS, Shadcn
+- **Frameworks & Libraries**: React, Tailwind CSS, Bootstrap5, Shadcn
 - **Tools & Platforms**: Git, Appwrite, TanStack Query, React Router
 - **Soft Skills**: Problem-solving, teamwork, and attention to detail
 
