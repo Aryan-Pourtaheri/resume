@@ -9,7 +9,7 @@ As a frontend developer, I focus on crafting seamless user experiences with clea
 ## 🛠️ Skills & Technologies
 
 - **Languages**: JavaScript (ES6+), HTML, CSS
-- **Frameworks & Libraries**: React, Tailwind CSS, Bootstrap5, Shadcn
+- **Frameworks & Libraries**: React, Tailwind CSS, Shadcn
 - **Tools & Platforms**: Git, Appwrite, TanStack Query, React Router
 - **Soft Skills**: Problem-solving, teamwork, and attention to detail
 
@@ -23,9 +23,9 @@ A modern, responsive, and well-designed portfolio website that showcases my skil
 
 A full-fledged car rental website with seamless booking functionality, user authentication, and a stunning UI.
 
-### 🛒 Shopping Website _(In Progress)_
+### 🛒 [LikeShop](https://github.com/Aryan-Pourtaheri/resume/tree/main/resume/projects/react/LikeShop) - Shopping Website
 
-An e-commerce platform featuring product listings, search & filtering, cart functionality, and Mysql integration.
+An advanced e-commerce platform featuring product listings, search & filtering, cart functionality, and Appwrite database integration.
 
 ## 📬 Contact Me
 
