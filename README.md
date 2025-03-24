@@ -25,7 +25,7 @@ A full-fledged car rental website with seamless booking functionality, user auth
 
 ### 🛒 Shopping Website _(In Progress)_
 
-An e-commerce platform featuring product listings, search & filtering, cart functionality, and Appwrite database integration.
+An e-commerce platform featuring product listings, search & filtering, cart functionality, and Mysql integration.
 
 ## 📬 Contact Me
 
